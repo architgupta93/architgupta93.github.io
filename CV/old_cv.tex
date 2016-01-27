@@ -1,0 +1,283 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,8pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\usepackage{url}
+\defaultfontfeatures{Mapping=tex-text}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage{fullpage} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\usepackage[
+top   =3cm,
+bottom=2cm,
+left  =2cm,
+right =2cm]{geometry}
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.8} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titleformat{\subsection}{\Large\scshape\raggedleft}{}{0em}{}% Text formatting of sections
+\titlespacing{\section}{0pt}{1pt}{1pt} % Spacing around sections
+\titlespacing{\subsection}{0pt}{1pt}{1pt} % Spacing around sections
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\raggedright{\Huge \textsc{Archit} \Huge \textsc{Gupta}} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rlrl}
+\textsc{Address:}	&	Department of Electrical Engineering 	& \textsc{Phone:} 	& +91 77 38 283249\\
+\textsc{}		&	Indian Institute of Technology Bombay 	& \textsc{Email:} 	& \href{mailto:ArchitGupta@iitb.ac.in}{ArchitGupta@iitb.ac.in}\\
+\textsc{}		& 	263, Hostel 06, IIT Bombay 		& 			& \href{mailto:Architgupta.1993@gmail.com}{Architgupta.1993@gmail.com}\\
+\textsc{}		& 	Powai, Mumbai(India) 400076 		& \textsc{Web:}		& \href{http://www.ee.iitb.ac.in/student/~architgupta93}{www.ee.iitb.ac.in/student/{\textasciitilde}architgupta93}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{lrll}	
+&\textsc{July} 2011  & \textbf{Indian Institute of Technology}, Mumbai, India & \normalsize \textsc{Gpa}: 9.55/10.0 \\ 
+&- \textsc{Present} &  B.Tech (\textsc{Honors}) in Electrical Engineering & \hyperlink{grds}{\footnotesize Detailed List of Courses}\\
+&& Minor: Computer Science and Engineering\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+
+\begin{tabularx}{0.95\textwidth}{r|lXXr}
+\textsc{May -} & \multicolumn{4}{l}{\textsc{SoC} Design and Optimization at \textsc{SAMSUNG} \textsc{DMC RnD Center}, Suwon}\\
+\textsc{June 2014} & \multicolumn{4}{l}{South Korea | \small Guide: Dr. Dongjin Lee}\\ 
+& \multicolumn{4}{p{14.5cm}}{\small{Designed a controller for Samsung's Temperature Sensing analog IP. Integrated and synthesized the controller along with other peripherals into an SoC. Developed a glitch free mechanishm to switch clocks using Clock Gating Cells. Optimized the design for power consumption (improving gating efficiency) and empirically evaluated the energy complexity of algorithms on the aforementioned SoC}}\\
+\multicolumn{5}{c}{} \\
+& \multicolumn{4}{p{14.5cm}}{Teaching Assistant at Indian Institute of Technology, Bombay}\\
+\textsc{Jan -} &\footnotesize{MA 106} & \footnotesize{Linear Algebra} & \footnotesize{Prof. Neela Natraj} & \footnotesize{Jan - Mar 2013}\\
+\textsc{May 2014} &\footnotesize{MA 108} & \footnotesize{Differential Equations} & \footnotesize{Prof. U. K. Anandvardhanan} & \footnotesize{Mar - May 2013}\\
+&\footnotesize{MA 106} & \footnotesize{Linear Algebra} & \footnotesize{Prof. Murali K. Srinivasan} & \footnotesize{Jan - Mar 2014}\\
+\multicolumn{5}{c}{} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Key Research Projects}
+\begin{longtable}{lr}
+
+%------------------------------------
+% 		BTP I 
+%------------------------------------
+
+
+\textbf{Load analysis and energy efficient operation of  Cellular Networks} & \textsc{July 2014 - Ongoing}\\
+\href{https://www.ee.iitb.ac.in/~infonet/}{InfoNet Laboratory} & \href{https://www.ee.iitb.ac.in/wiki/faculty/karandi}{Prof. Abhay Karandikar}\\
+\multicolumn{2}{p{16.5cm}}{
+\begin{itemize}
+	\item Base Stations (BS) are set up to meet the peak Quality of Service (QoS) demands in a locality. However, operational costs can be drastically cut down by reorganizing the network dynamically. We developed a model to predict the network state (Voice traffic at each of the BSs) by analytically modeling the traffic data of one of India's leading telecom operators. 
+	\item We also demonstrated the feasibility of saving operational cost using a simple ON/OFF scheme, where we determine the optinal number of BSs required to maintain coverage at low load hours. We are now looking at game theoritic approaches to determine a strategy that optimizes power consumption under certain  QoS constraints. We recently submitted a  \href{http://www.ee.iitb.ac.in/student/~architgupta93/projects/desc/btp-paper.htm}{paper} at the National Conference on Communications, 2015 for the same.
+\end{itemize}
+}\\
+
+%------------------------------------
+% 	BREMICS - SUMMER 2013
+%------------------------------------
+
+\textbf{High Performace Circuit-Simulation using Stack-based processors} & \textsc{May-July, 2013}\\
+\href{https://www.ee.iitb.ac.in/~hpc/}{High Perfromance Computing Lab, IIT Bombay} & \href{https://www.ee.iitb.ac.in/wiki/faculty/patkar}{Prof. Sachin Patkar}\\
+\multicolumn{2}{p{16.5cm}}{
+\begin{itemize}
+	\item SIMD architectures have demonstrated significantly high throughputs for a large class of parallel programs. However, programs like circuit simulation, which have immense parallelizability, but are inherently MIMD, do not benifit much from them. We designed lightweight stack-based MIMD cores to simulate circuits using \href{https://www.ee.iitb.ac.in/vlsi/wb/slides/workshop3/bremics.pdf}{BReMICS}, a point relaxation method.
+	\item We made use of Gauss-Seidel method for parallelization and Newton-Raphson Linearization for efficient memory reuse on the bandwidth starved CPU-FPGA assembly. The stack architecture allows efficient reuse of data, especially in complex equations involving floating point where explicitly recording intermediate values is unnecessary.  
+\end{itemize}
+}\\
+
+\end{longtable}
+
+%----------------------------------------------------------------------------------------
+%	ACADEMIC PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Academic Projects}
+
+\begin{tabular}{lr}
+
+\textbf{Music and Brain: Perception of Rhythm} & \href{https://www.ee.iitb.ac.in/web/faculty/homepage/bipin}{Prof. Bipin Rajendran} \\
+EE 746: Neuromorphic Engineering & Autumn 2014-2015 \\
+\multicolumn{2}{p{16.5cm}}{
+\begin{itemize}
+	\item Neurons, for computational simplicity, are usually modelled as Integrators. However, several properties of the biological neuron, like resonance and ion-channel dynamics, cannot be expressed by a simple integrator model.  
+	\item We demonstrated that perception of music is closely associated with these properties by using a Resonate and Fire model(Izhikevich [2001]) for beat tracking. Our results closely matched the response of human subjects who were asked to tap along with the music.
+\end{itemize}
+}\\
+
+\textbf{Dynamic Warp formation in \textsc{GpGpu}} & \href{https://www.ee.iitb.ac.in/~viren/}{Prof. Virendra Singh}\\
+EE 748: Advanced Computer Architecture & Autumn 2014-2015 \\
+\multicolumn{2}{p{16.5cm}}{
+\begin{itemize}
+	\item Fung et al. [2007] propsed a mechanism for dynamic warp formation in GPGPUs in order to handle control divergence. The scheduling policies have so far been motivated by intution. We are exploring hardware-based scheduling algorithms, which are aided by the compiler to optimally group the threads into warps in GPGPUs to minimize control divergence   
+	\item We are also looking at a ping-pong architecture for register files with aggressive pre-fetching to solve the problem of lane allotment for threads in SIMD execution
+\end{itemize}
+}\\
+
+\textbf{Single Image Super resolution} & \href{https://www.cse.iitb.ac.in/~ajitvr/}{Prof. Ajit Rajwade}\\
+CS 667: Digital Image Processing & Autumn 2013-14\\
+\multicolumn{2}{p{16.5cm}}{
+\begin{itemize}
+	\item Natural images tend to have significant amount of redundancy both within and across scales. The latter can be used to generate images with larger resolution by mapping recurrent patches on smaller scales with their high-resolution counterparts in the original image
+	\item We made use of example based super-resolution to build a database of High and Low resolution vectors across the scales of a single image and utilized it to generate the higher-resolution image. This was based on the work by Glasner et al. (2009) titles, Super-resolution from a Single Image.
+\end{itemize}
+}\\
+
+\textbf{Combined shape from shading and stereo vision} & \href{https://www.ee.iitb.ac.in/~sc/}{Prof. Subhasis Chaudhuri}\\
+EE 702: Computer Vision & Spring 2013-14 \\ 
+\multicolumn{2}{p{16.5cm}}{
+\begin{itemize}
+	\item We combined the two methods of extracting 3D shape of an object from its 2D image. Shape from stereo vision estimates depth using the shift in a pixel when observed from two different locations, whereas shape from shading relies on changes in luminosity as a function of the surface gradient. We could conclude that the two orthogonal approaches when put together lead to better results than either. 
+\end{itemize}
+}\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	ACADEMIC ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+\section{Academic Achievements}
+
+\begin{tabular}{p{14.5cm}|r}
+	\textbullet Awarded the Best Internship Project at Samsung Global Research HQ for SoC design and optimization, suwon, South Korea & \textsc{June 2014} \\ 
+	\textbullet Indian delegate at the annual Winter School organized by the Institute of Theoritical Computer Science and Communications, CUHK, \textsc{Hong Kong} &\textsc{Jan 2014}\\
+	\multicolumn{2}{c}{}\\
+	\textbullet Gold Medalist at Indian National Physics Olympiads (INPhO) and Indian National Chemistry Olympiads (INChO). Qualified for Orientation Cum Selection Camp for the International Physics and Chemistry olympiads (IChO, IPhO), held at BARC, India & \textsc{July 2011}\\
+	\textbullet Secured All India Rank 14 in the Joint Entrance Examination for Indian Institutes of Technology (IIT-JEE). Ranked 1st in Kanpur Zone & \textsc{Apr 2011}\\
+	\multicolumn{2}{c}{}\\
+	\textbullet All India Rank 3 in the National Science Olympiads and All India Rank 04 in the International Mathematics Olympiads organized by Science Olympiad Foundation& \textsc{Mar 2010}\\
+	\multicolumn{2}{c}{}\\
+	\textbullet Felicitated by former President of India, Dr. A. P. J. Abdul Kalam for excellence in Academics  at Rashtriya Indian Military College, Dehradun, India & \textsc{Apr 2009}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COURSE LIST	
+%----------------------------------------------------------------------------------------
+
+\section{Relevant Coursework}
+\par{\hypertarget{grds} \scshape{B.Tech in Electrical Engineering, IIT Bombay 
+}}\\
+\vspace{3pt}
+\begin{tabular}{p{2.5cm}|p{13.5cm}}
+\textsc{Electrical Engineering} &  Digital Circuits, Processor Design, Advanced topics in Computer Architecure,  Microelectronic Circuits, VLSI Design, Microcontrollers Laboratory, Digital Image Processing, Computer Vision, Digital Signal Processing\\
+&\\
+\textsc{Computer Science} & Data structures and Algorithms, Discrete Math, Databases and information systems, Design and analysis of algorithms, Computer Networks \\
+&\\
+\textsc{Mathematics} & Differential Equations, Linear Algebra, Complex Analysis\\
+&\\
+\textsc{Miscellaneous} & Neuromorphic Engineering, Information Theory and Coding, Quantum Mechanics \\ 
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\begin{tabular}{rp{13.5cm}}
+\textsc{Languages}: & Verilog, SystemC, Bluespec, Cuda, C/C++, Java, Python, HTML, my\textsc{sql} \\
+\textsc{Toolchains}: & \textsc{arm-eabi}, \textsc{gem5}, \textsc{gpgpu-sim}, Cadence-Simvision, Power Artist, Synopsys Design Compiler, Spice\\
+\textsc{Applications}: & \textsc{matlab}, \textsc{Latex}, Magic VLSI, Eagle\\ 
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EXTRA-CURRICULAR ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Extra-Curricular Activities}
+\begin{tabular}{p{16.5cm}}
+\subsection*{\textsc{Sports}}
+	\begin{itemize}
+		\item Silver Medalist in Hockey at Inter IIT Sports Meet held at IIT Kharagpur (Dec 2012). Represented IIT Bombay at the Inter IIT Sports Meets (2011, 2013) as well as the annual league tournament organized by Mumbai Hockey Association in Division C.
+		\item Awarded Institute Special Mention, for contribution to sports at IIT Bombay in 2012-2013
+		\item Silver Medalist at Inter-Section Boxing Championships at Rashtriya Indian Militar College, March 2008
+	\end{itemize}
+
+\subsection*{\textsc{Cultural}}
+\begin{itemize}
+	\item As the band's drummer, performed at various events both within and outside the institute (Surbahar, Battle of the Bands, Acoustic Dusk, Umang - NM College, Mumbai).
+	\item Winner of the Freshmen musical contest in both the Indian and  Western genres. 
+	\item Best Speaker at TV 99 and Leela Hotels English Debate 2010, Lady Lennel Hindi Debates (Welham Girls' School) 2008 and Kashi Naresh Hindi Debates (Rashtriya Indian Military College) 2009. Participated in several other hindi and english debates in and around Dehradun, India.  
+\end{itemize}
+\end{tabular}
+
+\section{Positions Held}
+\begin{tabular}{p{16.5cm}}
+\textbf{Institute Hockey Secretary} (2013-14):
+ I was a member of the Institute Sports Council at IIT Bombay and responsible for organizing and conducting Inter-Hostel hockey championships, trials and selection of Institute teams as well as acquiring and managing equipment and infrastructure.
+\end{tabular}
+\vspace{8pt}
+
+%----------------------------------------------------------------------------------------
+% REFERENCES	
+%----------------------------------------------------------------------------------------
+
+\section{References}
+\begin{tabular}{l{p{10cm}}l}
+\textbf{Prof. Virendra Singh} && \textbf{Dr. Dongjin Lee} \\
+Associate Professor && Senior Engineer \\
+Dept. of Electrical Engineering && Camera Platform Lab \\
+\vspace{8pt}
+IIT Bombay, India && Samsung RnD Center, South Korea \\
+\textbf{Prof. Sachin Patkar} && \textbf{Prof. Abhay Karandikar}\\
+Associate Profesor && Head of Dept. (EE) \\
+Dept. of Electrical Engineering && Dept. of Electrical Engineering\\
+IIT Bombay && IIT Bombay \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

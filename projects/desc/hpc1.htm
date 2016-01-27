@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8; width=device-width" />
+<title>High Performance Computing</title>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../js/iframe-load.js"></script>
+
+</head>
+<body class="sub-body">
+<div class="project">
+	<h2>High performance circuit-simulation on FPGA</h2>
+	<div>
+		<div class="center"><a href="hpc1-report.htm" target="_parent">Presentation</a></div>
+	</div>
+	<div id="proj-container">
+		<h3>&nbspINTRODUCTION</h3>
+		<p class="introduction">
+			SIMD architectures have dominated the field of hardware acceleration for the past decade. Light weight cores are stacked together, performing the same operations on a set of threads in lock-step. However, a large class of parallel programs are inherently MIMD in nature and accelerating them on SIMD architectures, like GPGPU, requires the programmer to manually breakdown the code into serial and kernel code. We took the case of circuit simulation, where each node has its unique Kirchoff's current and voltage equations to be solved and demonstrated that a custom accelerator on an FPGA can possibly surpass the state-of-art accelerators.  
+		</p>
+		<h3>&nbspBReMICS</h3>
+		<p class="introduction">
+			BReMICS (Bombay Relaxation MOS Integrated Circuit Simulator) is based on the idea of point relaxation as opposed to waveform relaxation. When there is no or minimal feedback in a circuit, iterative methods can be faster for simulation. It has been observed that digital MOS circuits satisfy the convergence criteria. A natural method to simulate a circuit with 'n' nodes is to break the simulation problem into 'n' subproblems, where each node treats the rest as input sources. Gauss Seidel iterations are applied at each of the nodes in parallel until convergence is reached.
+		</p>
+		<h3>&nbspHARDWARE ACCELERATION</h3>
+		<div style:"width=100%;">
+			<img src="../../images/Projects/stack_arch.png" height=240 width=360 class="three-column spaced-column"/>
+			<p class="two-third-column spaced-column"> 
+				We designed lightweight, stack-based cores to accelerate the now-parallelized simulation process. Currently, we are exploring the design space to combat the communication bottleneck for the FPGA. One of the solutions that we've been exploring is shown in the figure. 
+			</p>
+		</div> 
+	</div>
+        <h2 class="project-title-end"> *** </h2>
+</div>
+</body>
+</html>

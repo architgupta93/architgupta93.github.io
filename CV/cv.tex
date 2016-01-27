@@ -1,0 +1,68 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{xunicode,xltxtra,url,parskip} 	% other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fullpage} 				% formatting page margins	
+\usepackage{supertabular} 			% for Grades
+\usepackage{titlesec}				% custom \section
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{longtable}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\geometry{
+footskip=2cm,
+top=2cm,
+bottom=2cm,
+left=2cm,
+right=2cm
+}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2pt}{2pt}
+%Tweak a bit the top margin
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Archit Gupta
+}\par}
+
+%--------------------SECTIONS-----------------------------------
+
+\section{Personal Data}
+\input{personal.tex}
+
+\section{Education}
+\input{education.tex}
+
+\section{Work Experience}
+\input{work.tex}
+
+\section{Research}
+\input{research.tex}
+
+\section{Projects}
+\input{projects.tex}
+
+\section{Academic Achievements}
+\input{achievements.tex}
+
+\section{Extra-Curricular Activities}
+\input{extra-currics.tex}
+
+\end{document}

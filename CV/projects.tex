@@ -1,0 +1,29 @@
+\begin{tabularx}{.95\textwidth}{lr}
+\textbf{Analyzing control dependent inefficiencies in a \textsc{Gpu}} &
+\href{https://www.ee.iitb.ac.in/~viren/}{Prof. Krste Asanovic}\\
+Computer Architecture & Fall-2015 \\
+\multicolumn{2}{p{16cm}}{
+\begin{itemize}
+	\item Fung et al. [2007] propsed a mechanism for dynamic warp formation in GPGPUs in order to handle control divergence. The scheduling policies have so far been motivated by intution. We are exploring hardware-based scheduling algorithms, which are aided by the compiler to optimally group the threads into warps in GPGPUs to minimize control divergence   
+	\item We are also looking at a ping-pong architecture for register files with aggressive pre-fetching to solve the problem of lane allotment for threads in SIMD execution
+\end{itemize}
+}\\
+
+\textbf{Single Image Super resolution} & \href{https://www.cse.iitb.ac.in/~ajitvr/}{Prof. Ajit Rajwade}\\
+Image processing & Autumn 2013-14\\
+\multicolumn{2}{p{16cm}}{
+\begin{itemize}
+	\item Natural images tend to have significant amount of redundancy both within and across scales. The latter can be used to generate images with larger resolution by mapping recurrent patches on smaller scales with their high-resolution counterparts in the original image
+	\item We made use of example based super-resolution to build a database of High and Low resolution vectors across the scales of a single image and utilized it to generate the higher-resolution image. This was based on the work by Glasner et al. (2009) titles, Super-resolution from a Single Image.
+\end{itemize}
+}\\
+
+\textbf{High Performace Circuit-Simulation using Stack-based processors} & \textsc{May-July, 2013}\\
+\href{https://www.ee.iitb.ac.in/~hpc/}{High Perfromance Computing Lab, IIT Bombay} & \href{https://www.ee.iitb.ac.in/wiki/faculty/patkar}{Prof. Sachin Patkar}\\
+\multicolumn{2}{p{16cm}}{
+\begin{itemize}
+	\item SIMD architectures have demonstrated significantly high throughputs for a large class of parallel programs. However, programs like circuit simulation, which have immense parallelizability, but are inherently MIMD, do not benifit much from them. We designed lightweight stack-based MIMD cores to simulate circuits using \href{https://www.ee.iitb.ac.in/vlsi/wb/slides/workshop3/bremics.pdf}{BReMICS}, a point relaxation method.
+	\item We made use of Gauss-Seidel method for parallelization and Newton-Raphson Linearization for efficient memory reuse on the bandwidth starved CPU-FPGA assembly. The stack architecture allows efficient reuse of data, especially in complex equations involving floating point where explicitly recording intermediate values is unnecessary.  
+\end{itemize}
+}\\
+\end{tabularx}
