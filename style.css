@@ -79,7 +79,7 @@ body{
 }
 
 .menu-logo h1{
-	font: 400 40px/48px 'Bree Serif', Georgia, serif; 
+	font: 36px/40px 'Bree Serif', Georgia, serif; 
 	color: #cfcfcc;
 	margin-top: auto;
 	margin-bottom: auto;	/* Setting margin-top and margin-bottom to auto
@@ -182,7 +182,7 @@ a{
 	width: 100%;		/* Main container should occupy 80% of the total
 				 * available space on the page */
 	height: 80%;
-	overflow: auto;
+	overflow: hidden;
 }
 
 #main-container h2{
@@ -225,8 +225,7 @@ a{
 }
 
 .project a{
-	text-decoration: none;
-	color: #aaaacc;
+	color: #9cf;
 }
 
 .design-image{

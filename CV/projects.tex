@@ -1,11 +1,11 @@
 \begin{tabularx}{.95\textwidth}{lr}
 \textbf{Analyzing control dependent inefficiencies in a \textsc{Gpu}} &
-\href{https://www.ee.iitb.ac.in/~viren/}{Prof. Krste Asanovic}\\
+\href{https://www.eecs.berkeley.edu/~krste/}{Prof. Krste Asanovic}\\
 Computer Architecture & Fall-2015 \\
 \multicolumn{2}{p{16cm}}{
 \begin{itemize}
-	\item Fung et al. [2007] propsed a mechanism for dynamic warp formation in GPGPUs in order to handle control divergence. The scheduling policies have so far been motivated by intution. We are exploring hardware-based scheduling algorithms, which are aided by the compiler to optimally group the threads into warps in GPGPUs to minimize control divergence   
-	\item We are also looking at a ping-pong architecture for register files with aggressive pre-fetching to solve the problem of lane allotment for threads in SIMD execution
+  	\item Since GPUs were originally designed to run graphics applications, their fundamental architectural features restrict us from using them for general purpose computing. 
+	\item  We examined the different strategies that are adopted to map a general purpose application onto a GPU and quantified the performance loss that arises from this mapping of general purpose applications onto a GPU in the context of branch divergence.
 \end{itemize}
 }\\
 
