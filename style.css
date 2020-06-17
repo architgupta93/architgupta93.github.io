@@ -93,6 +93,15 @@ body{
 	text-decoration: none;
 }
 
+.teaching-main-menu{
+	display: inline;
+	float: right;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 100%;
+	text-decoration: none;
+}
+
 .main-menu{
 	display: inline;
 	float: right;
@@ -113,6 +122,22 @@ a{
 
 .plain-list a{
 	text-decoration: none;
+}
+
+
+.teaching-main-menu li{		
+                                /* Properties for each list item */
+	display: inline;	/* An inline element does not start on a new
+ 				 * line and only takes as much space as is
+ 				 * necessary */
+
+	float: right;		/* The float property specifies that an element
+				 * should be taken from the normal flow and
+				 * placed along the left or right side of the
+				 * container (ignored when position is absolute
+				 */
+	font: 20px/24px 'Bree Serif', Georgia, serif;
+	padding-left: 5%;	/* 4 elements in all make 40% padding */
 }
 
 .main-menu li{			/* Properties for each list item */
