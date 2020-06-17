@@ -16,8 +16,8 @@
 		<ul class="main-menu">
 			<li><a href="contact.php">Contact</a></li>
 			<li><a href="resume.htm">Resume</a></li>
-			<li><a href="blog.htm">Blog</a></li>
-			<li><a href="work.htm">Academics</a></li>
+			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="research.htm">Research</a></li>
 			<li><a href="about.htm">About</a></li>
 		</ul>	
 	</div>
