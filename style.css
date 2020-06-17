@@ -53,6 +53,7 @@ body{
 	width: 100%;
 	border: 0;
 	border-top: 1px solid #cfcfcc;
+	border-bottom: 1px solid #cfcfcc;
 	background: #cfcfcc;
 }
 
@@ -66,6 +67,7 @@ body{
 .page-material p{
 	color: #fffffc;
 	text-align: justify;
+	overflow: hidden;
 }
 
 .menu-bar{
@@ -185,6 +187,13 @@ a{
 	overflow: hidden;
 }
 
+#main-container h1{
+	font: 300 36px/42px 'Bree Serif', Georgia, serif;
+	color: #aaf0aa;
+	margin-top: auto;
+	margin-bottom: auto;	
+}
+
 #main-container h2{
 	font: 200 24px/28px 'Bree Serif', Georgia, serif;
 	color: #aaaaf0;
@@ -197,9 +206,72 @@ a{
 	margin-bottom: 2%;
 }
 
+#main-container #publication-list{
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	color: #fffffc;
+}
+
+
 #main-container p{
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+/*********************************************************/
+/* Extended container - Extends beyond typical viewing page size
+/*********************************************************/ 
+#extended-content{
+	width: 70%;	
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+#extended-container{
+	width: 100%;
+}
+
+#extended-container h1{
+	font: 300 36px/42px 'Bree Serif', Georgia, serif;
+	color: #aaf0aa;
+	margin-top: auto;
+	margin-bottom: auto;	
+}
+
+#extended-container h2{
+	font: 200 24px/28px 'Bree Serif', Georgia, serif;
+	color: #aaaaf0;
+}
+
+#extended-container #photo-and-text{
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#extended-container #publication-list{
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	color: #fffffc;
+}
+
+#extended-container p{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.extended-page-material{
+	display: block;
+}
+
+.extended-page-material p{
+	color: #fffffc;
+	text-align: justify;
 }
 
 /*		PAGE SPECIFIC STYLIZATION		   */
