@@ -28,7 +28,7 @@
 				<h2>Contact me:</h2>
 				<p>You can either drop a message here or you can mail me at one of the following mail addresses. Thank You for visiting my page! <?php if(!isset($_POST["sender"])) {echo 'Please Mention your Name and email address so that I can get back to you.';} ?></p>
 			    <ul id="sm-links" class="plain-list">
-				<li><a href="mail-to:architgupta@berkeley.edu?Subject=Mail%20from%20Webpage">ArchitGupta93[at]berkeley.edu</a></li>
+				<li><a href="mail-to:architgupta@berkeley.edu?Subject=Mail%20from%20Webpage">ArchitGupta[at]berkeley.edu</a></li>
 			    </ul>
 			</div>
             		<div id="form" class="two-third-column">
